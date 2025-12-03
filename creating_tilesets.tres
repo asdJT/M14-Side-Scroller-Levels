@@ -1,0 +1,26 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bey5p2r5fwc10"]
+
+[ext_resource type="Texture2D" uid="uid://c60mne7nkn0oq" path="res://assets/tilesets/ground_tileset.png" id="1_a6hs4"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ewvgb"]
+resource_name = "Ground"
+texture = ExtResource("1_a6hs4")
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
+[resource]
+sources/0 = SubResource("TileSetAtlasSource_ewvgb")
