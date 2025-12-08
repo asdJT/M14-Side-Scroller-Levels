@@ -83,7 +83,7 @@ grab={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("uid://0ilqwn1ikwac")
+locale/translations_pot_files=PackedStringArray("uid://0ilqwn1ikwac", "res://addons/godot_tours/tour.gd", "uid://5akcqjef25ps", "uid://f4707vv72fkr", "uid://d0h2i5gnngkxo", "uid://6sow0h7jvthn")
 
 [layer_names]
 
