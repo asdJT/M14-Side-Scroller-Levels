@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=4 uid="uid://gg7qqy4sxwn6"]
+[gd_scene load_steps=6 format=4 uid="uid://gg7qqy4sxwn6"]
 
 [ext_resource type="PackedScene" uid="uid://brdsbllfrxj4k" path="res://player/player.tscn" id="1_fxu6a"]
 [ext_resource type="Script" uid="uid://b33uhm7fq6ir0" path="res://levels/level.gd" id="1_tumfc"]
 [ext_resource type="TileSet" uid="uid://coa1opc5720jn" path="res://new_tile_set.tres" id="2_faee6"]
 [ext_resource type="Script" uid="uid://dr6sq0gfhuwqx" path="res://entities/kill_plane.gd" id="3_faee6"]
+[ext_resource type="PackedScene" uid="uid://c5bvexne7dovp" path="res://assets/tilesets/mushroom_world/mushroom_far_background.tscn" id="5_y4ksy"]
 
 [node name="level" type="Node2D" node_paths=PackedStringArray("gameplay_tilemap")]
 script = ExtResource("1_tumfc")
@@ -28,3 +29,5 @@ position = Vector2(5, 238)
 collision_layer = 0
 script = ExtResource("3_faee6")
 metadata/_custom_type_script = "uid://dr6sq0gfhuwqx"
+
+[node name="Background" parent="." instance=ExtResource("5_y4ksy")]

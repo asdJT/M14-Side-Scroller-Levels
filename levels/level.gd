@@ -12,14 +12,14 @@ func _ready() -> void:
 	await get_tree().process_frame
 	for child in gameplay_tilemap.get_children():
 		if child is EndFlag:
-			child.body_entered.connect(func (body: Area2D) -> void:
+			child.body_entered.connect(func (body: Node2D) -> void:
 				await get_tree().create_timer(2.0).timeout
 				_change_to_next_level()
 			)
 			break
 
 func _change_to_next_level() -> void:
-	if next_level_path == null:
+	if next_level_path.is_empty():
 		get_tree().quit()
 		return
 	
